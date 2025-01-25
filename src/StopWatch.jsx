@@ -54,7 +54,10 @@ function StopWatch(){
     }
 
     return(
+       <>
+       
         <div className="Stopwatch">
+        <h1 className="head">StopWatch</h1>
             <div className="display">{FormatTime()}</div>
             <div className="controls">
                 <button className="Start" onClick={Start}>Start</button>
@@ -62,6 +65,7 @@ function StopWatch(){
                 <button className="Reset" onClick={Reset}>Reset</button>
             </div>
         </div>
+       </>
     )
 }
 export default StopWatch
